@@ -1,4 +1,4 @@
-# intent
+# Intent
 
     Provide an interface for creating families of related or dependent objects without specifying their concrete classes
 
@@ -14,5 +14,16 @@
   <img src="image.png" alt="alt text" />
 </div>
 
-
+# Participants
+    • AbstractFactory (UIFactory)
+        - declares an interface for operations that create abstract product objects.
+    • ConcreteFactory (WinUI, MacUI)
+        - implements the operations to create concrete product objects.
+    • AbstractProduct (button, scrollBar)
+        - declares an interfacefor a type of product object.
+    • ConcreteProduct (winButton, macButton, winScrollBar, macScrollBar)
+        - defines a product objecttobecreated bythe corresponding concrete factory.
+        - implements the AbstractProduct interface.
+    • Client
+        - uses only interfaces declared by AbstractFactory and AbstractProduct classes.
     
